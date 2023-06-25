@@ -1,0 +1,24 @@
+# GPTProvider
+
+The `GPTProvider` needs to be defined in order for ad units to load. Ideally it should be defined on a per-page basis, and as low down the component tree as possible.
+
+```tsx showLineNumbers
+import { GPTProvider } from 'goopubtag';
+
+const MyPage = () => {
+  return (
+    <GPTProvider networkId={123456}>
+      <MyComponent />
+    </GPTProvider>
+  );
+};  
+
+export default MyPage;
+```
+
+Here is a complete list of props available for `GPTProvider`:
+
+| Prop         | type      | description                                              | Required |
+| :----------- | :-------- | :------------------------------------------------------- | :------- |
+| `networkId`    |  number   |   The network id | ✅ |
+| `sizes`    |  Size[]   |   The sizes | ❌ |

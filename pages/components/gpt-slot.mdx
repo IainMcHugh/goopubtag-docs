@@ -1,0 +1,27 @@
+# GPTSlot
+
+The `GPTSlot` is a component representing the Ad unit you want to display on the page.
+
+```tsx showLineNumbers
+import { GPTSlot } from 'goopubtag';
+
+const MyComponent = () => {
+  return (
+    <div>
+      <p>Ad foo</p>
+      <GPTSlot adUnit='abc/xyz' id='foo' />
+      <p>Ad baz</p>
+      <GPTSlot adUnit='abc/xyz' id='baz' />
+    </div>
+  );
+};  
+
+export default MyPage;
+```
+
+Here is a complete list of props available for `GPTSlot`:
+
+| Prop         | type      | description                                              | Required |
+| :----------- | :-------- | :------------------------------------------------------- | :------- |
+| `id`    |  string   |   The slot id for the ad | ✅ |
+| `adUnit`    |  string   |   The prefix for your ad if any | ❌ |
