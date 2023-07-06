@@ -1,9 +1,9 @@
-# Display Test Ad
+# Display out of page ad
 
 ```tsx
 import { GPTProvider, GPTSlot } from 'goopubtag';
 
-const DisplayTestAd = () => {
+const DisplayOutOfPageAd = () => {
   return (
     <GPTProvider networkId={6355419} debug={true}>
       <Component />
@@ -16,13 +16,15 @@ const Component = () => {
     <div>
       <p>Display test ad</p>
       <GPTSlot
-        slotId="banner-ad"
+        slotId="out-of-page-ad"
         adUnit="Travel/Europe/France/Paris"
         sizes={[300, 250]}
+        targetingArguments={{ test: 'outofpage' }}
+        outOfPage={true}
       />
     </div>
   );
 };
 
-export { DisplayTestAd };
+export { DisplayOutOfPageAd };
 ```

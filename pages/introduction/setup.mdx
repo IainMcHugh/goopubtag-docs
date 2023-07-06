@@ -1,12 +1,12 @@
 ## How to install
 
-At the route of your React application, in your terminal run:
+At the route of your application, in your terminal run:
 
 ```zsh copy
 npm install goopubtag
 ```
 
-After installation, you can start using `goopubtag` in your application.
+After installation is complete, you can start using `goopubtag` in your application:
 
 ```tsx showLineNumbers
 import { GPTProvider, GPTSlot } from 'goopubtag';
@@ -15,8 +15,8 @@ const Component = () => {
   return (
     <div>
       <GPTProvider networkId={123456}>
-        {/** Your code.. */}
-        <GPTSlot slotId="abc">
+        {/** .. */}
+        <GPTSlot slotId="your-slot-id">
       </GPTProvider>
     </div>
   );
@@ -29,4 +29,4 @@ To learn more about our supported components and how to wire them up, have a loo
 - [GPTSlot](/components/gpt-slot)
 - [useGPT](/components/use-gpt)
 
-Or if you want to see how you can implement different use cases, check out our [examples](/examples/index).
+Or if you want to see how you can implement different use cases, check out our [examples](/examples).
