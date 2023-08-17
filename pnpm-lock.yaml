@@ -6,6 +6,7 @@ specifiers:
   next: 13.4.7
   nextra: ^2.8.0
   nextra-theme-docs: ^2.8.0
+  prettier: ^3.0.2
   react: 18.2.0
   react-dom: 18.2.0
 
@@ -13,6 +14,7 @@ dependencies:
   next: 13.4.7_biqbaboplfbrettd7655fr4n2y
   nextra: 2.8.0_5v7kwk6wz2hvmegftnptprfjvm
   nextra-theme-docs: 2.8.0_s3swf6snrbkiqrvkexxg6t2uqi
+  prettier: 3.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -3612,6 +3614,12 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
     dev: true
+
+  /prettier/3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: false
 
   /prop-types/15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}

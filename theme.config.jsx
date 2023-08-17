@@ -1,5 +1,10 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+/** @type {import('nextra-theme-docs').DocsThemeConfig} */
+const themeConfig = {
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s - Goopubtag",
+    };
+  },
   project: {
     link: 'https://github.com/iainmchugh/goopubtag',
     icon: (
@@ -642,5 +647,7 @@ export default {
         .
       </span>
     )
-  }
+  },
 }
+
+export default themeConfig;
