@@ -1,34 +1,9 @@
+import { Embed } from '../../components/Embed';
+
 # Refresh
 
-```tsx
-import { GPTProvider, GPTSlot, useGPT } from 'goopubtag';
-
-const Refresh = () => {
-  return (
-    <GPTProvider networkId={6355419} debug={true}>
-      <Component />
-    </GPTProvider>
-  );
-};
-
-const Component = () => {
-  const { refresh } = useGPT();
-
-  const handleClick = () => {
-    refresh();
-  };
-  return (
-    <div>
-      <GPTSlot
-        slotId="banner-ad"
-        adUnit="Travel/Europe/France/Paris"
-        sizes={[300, 250]}
-      />
-      <button onClick={handleClick}>Refresh</button>
-    </div>
-  );
-};
-
-export { Refresh };
-
-```
+<br />
+<br />
+<Embed id="refresh-3dj3fv" view="EDITOR" />
+<br />
+<Embed id="refresh-3dj3fv" view="PREVIEW" share />
