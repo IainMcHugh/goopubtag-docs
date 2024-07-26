@@ -11,7 +11,7 @@ const MyPage = () => {
       <MyComponent />
     </GPTProvider>
   );
-};  
+};
 
 export default MyPage;
 ```
@@ -20,68 +20,68 @@ export default MyPage;
 
 Here is a complete list of props available for `GPTProvider`, with details of each below:
 
-| Prop               | Type      | Required |
-| :-----------       | :-------- | :------- |
-| networkId          |  `number` | ✅ |
-| children           |  `ReactNode` | ✅ |
-| debug              |  `boolean` | ❌ |
-| personalizedAds    |  `boolean` | ❌ |
-| singleRequest      |  `boolean` | ❌ |
-| disableInitialLoad |  `boolean` | ❌ |
-| limitedAds         |  `boolean` | ❌ |
-| autoLoad           |  `boolean` | ❌ |
-| lazyLoad           |  `boolean \| LazyLoad` | ❌ |
-| autoReload         |  `AutoReload` | ❌ |
-| fallback           |  `Collapse` | ❌ |
-| outOfPage          |  `OutOfPage` | ❌ |
-| adUnit             |  `string` | ❌ |
-| sizeMapping        |  `SizeMapping[]` | ❌ |
-| adSenseAttributes  |  `Attributes` | ❌ |
-| targetingArguments |  `Attributes` | ❌ |
+| Prop               | Type                  | Required |
+| :----------------- | :-------------------- | :------- |
+| networkId          | `number`              | ✅       |
+| children           | `ReactNode`           | ✅       |
+| debug              | `boolean`             | ❌       |
+| personalizedAds    | `boolean`             | ❌       |
+| singleRequest      | `boolean`             | ❌       |
+| disableInitialLoad | `boolean`             | ❌       |
+| limitedAds         | `boolean`             | ❌       |
+| autoLoad           | `boolean`             | ❌       |
+| lazyLoad           | `boolean \| LazyLoad` | ❌       |
+| autoReload         | `AutoReload`          | ❌       |
+| fallback           | `Collapse`            | ❌       |
+| outOfPage          | `OutOfPage`           | ❌       |
+| adUnit             | `string`              | ❌       |
+| sizeMapping        | `SizeMapping[]`       | ❌       |
+| adSenseAttributes  | `Attributes`          | ❌       |
+| targetingArguments | `Attributes`          | ❌       |
 
 It is important to note that some of the props can be overwritten at a slot level.
 
-### `networkId`
+### `networkId` ✅
 
 This is a unique identifier for the Ad Manager network the ad unit belongs to.
 
-### `children`
+### `children` ✅
 
 Children components are required and excluding will result in errors. It is useful to note that `useGPT` cannot be used outside of the `GPTProvider`, so best practice involves nesting your components one layer deep from where the context is declared.
 
-### `debug`
+### `debug` ✅
 
 When enabled, a floating icon appears in the bottom right corner that when clicked opens the GPT console. Useful for development, should **NOT** be enabled in production.
 
-### `personalizedAds`
+### `personalizedAds` ✅
 
 TBD
 
-### `singleRequest`
+### `singleRequest` 👷
 
 When enabled, this will bundle requests for multiple ads into a single request.
 
-### `disableInitialLoad`
+### `disableInitialLoad` 👷
 
-TBD 
+TBD
 
-### `limitedAds`
+### `limitedAds` ✅
 
 When enabled, limited ads will be rendered for each ad slot defined.
 
-### `autoLoad`
-
-TBD 
-
-### `lazyLoad`
+### `autoLoad` 👷
 
 TBD
 
-### `autoReload`
+### `lazyLoad` ✅
+
+Allows for lazy loading of ad units based on scroll position in viewport. See [lazy load example](/examples/lazy_load).
+
+### `autoReload` 👷
 
 TBD
 
-### `fallback`
+### `fallback` ✅
 
 This prop specifies the global `collapseEmptyDivs` behaviour, and takes the following options:
 
@@ -89,7 +89,7 @@ This prop specifies the global `collapseEmptyDivs` behaviour, and takes the foll
 - `expand`: All ads will initially take no space, and each ad slot that gets filled will _expand_ to fill its space
 - `collapse`: All ads will initally take space configured, and each slot that fails to fill will _collapse_ to no size.
 
-### `outOfPage`
+### `outOfPage` ✅
 
 This prop determines the out of page behaviour, currently supporting the following types:
 
@@ -101,18 +101,18 @@ The props are dynamic depending on the outOfPage `type` set. To gain a better un
 - [Display Anchor Ad](/examples/display_anchor_ad)
 - [Display Rewarded Ad](/examples/display_rewarded_ad)
 
-### `adUnit`
+### `adUnit` ✅
 
 This defines the parent-ad-unit-code at a top level for all contained ad slots.
 
-### `sizeMapping`
+### `sizeMapping` ✅
 
 TBD
 
-### `adSenseAttributes`
+### `adSenseAttributes` ✅
 
-TBD 
+TBD
 
-### `targetingArguments`
+### `targetingArguments` ✅
 
 This prop is a simple key-value object that defines the page level targeting attributes for your GPT configuration.
